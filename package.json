@@ -1,23 +1,14 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "app.js",
+  "repository": "https://github.com/Dazzlesphere/Trekkit.git",
+  "author": "Faisal Chishti <faysalchishti@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.js",
-    "serve": "node index.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Dazzlesphere/Trekkit.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Dazzlesphere/Trekkit/issues"
-  },
-  "homepage": "https://github.com/Dazzlesphere/Trekkit#readme",
   "dependencies": {
     "dotenv": "^16.1.3",
     "express": "^4.18.2",
