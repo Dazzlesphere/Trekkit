@@ -6,7 +6,7 @@ const handlebars = require('express-handlebars');
 const mongoose = require('mongoose');
 
 const app = express();
-const port = 3000; // Use any port number you prefer
+const port = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
