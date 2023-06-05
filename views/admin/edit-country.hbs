@@ -1,32 +1,50 @@
-<div class="form">
+<form class="form">
     <div class="container">
 
         <div class="title">Edit Country</div>
 
         <div class="row">
-            <label for="country_name">Country Name:</label>
-            <input type="text" id="country_name">
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="textbox" required>
         </div>
         <div class="row">
-            <label for="country_desc">Description:</label>
-            <textarea id="country_desc" rows="6"></textarea>
+            <label for="officialName">Official Name:</label>
+            <input type="text" id="officialName" class="textbox" required>
         </div>
         <div class="row">
-            <label for="country_code">Country Code:</label>
-            <input type="text" id="country_code">
+            <label for="region">Region:</label>
+            <input type="text" id="region" class="textbox" required>
         </div>
         <div class="row">
-            <label for="country_population">Population:</label>
-            <input type="text" id="country_population">
+            <label for="subregion">Sub Region:</label>
+            <input type="text" id="subregion" class="textbox" required>
         </div>
         <div class="row">
-            <label for="country_capital">Capital:</label>
-            <input type="text" id="country_capital">
+            <label for="capital">Capital:</label>
+            <input type="text" id="capital" class="textbox" required>
+        </div>
+        <div class="row">
+            <label for="alpha2">Alpha2:</label>
+            <input type="text" id="alpha2" class="textbox" required>
+        </div>
+        <div class="row">
+            <label for="alpha3">Alpha3:</label>
+            <input type="text" id="alpha3" class="textbox" required>
+        </div>
+        <div class="row">
+            <label for="population">Population:</label>
+            <input type="text" id="population" class="textbox" required>
+        </div>
+        <div class="row">
+            <label for="languages">Languages:</label>
+            <input type="text" id="languages" class="textbox" required>
         </div>
 
         <div class="buttons">
-            <button class="btn">Fetch</button>
-            <button class="btn">Save</button>
+            <button class="btn" id="fetchButton">Fetch</button>
+            <button type="submit" class="btn" id="saveButton" disabled>Save</button>
         </div>
     </div>
-</div>
+</form>
+
+<script src="/admin/js/edit_country.js"></script>

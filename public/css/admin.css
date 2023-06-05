@@ -1,4 +1,5 @@
 :root {
+    --color-primary: rgb(16, 64, 76);
     --color-dark: #13687e;
 }
 
@@ -37,10 +38,19 @@
     margin-top: 15px;
 }
 
-.form input[type="text"] {
+.form .textbox {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+.form .textbox:focus {
+    outline: 1px solid var(--color-primary);
+}
+
+.form .textbox[disabled] {
+    background: #fff;
+    opacity: 0.7;
 }
 
 .form .buttons {
@@ -56,4 +66,8 @@
     color: #fff;
     background: var(--color-dark);
     border-radius: 2px;
+}
+
+.form .btn[disabled] {
+    opacity: 0.5;
 }

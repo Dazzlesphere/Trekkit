@@ -5,7 +5,7 @@ const router = express.Router();
 //const homeController = require('../../controllers/pages/homeController');
 
 router.get('/admin/editCountry', (req, res) => {
-    res.render('admin/edit-country', { layout:'admin' });
+    res.render('admin/edit-country', { layout:'admin', title:'Edit Country' });
 })
 
 // Define the route for the home page
